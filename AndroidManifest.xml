@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.novo.zealot">
+
+    <!-- Basic permissions required for map package and search package -->
+    <!-- Allows the application to open network sockets -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Used for accessing the network, as network location requires internet -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Used for writing cache data to external storage card -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Allows the application to access network status -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Allows the application to access WiFi network information -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- Used for reading the current status of the phone -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Used for network location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Used for accessing GPS location -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- Used to get permission to access WiFi, WiFi information will be used for network location -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- Used to request getting Bluetooth information for indoor location -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_zealot"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_zealot_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UI.Activity.ChartActivity"></activity>
+        <activity android:name=".UI.Activity.LogActivity" />
+        <activity android:name=".UI.Activity.firstUseActivity" />
+        <activity android:name=".UI.Activity.AboutActivity" />
+        <activity android:name=".UI.Activity.SettingActivity" />
+        <activity android:name=".UI.Activity.RunResultActivity" />
+        <activity android:name=".UI.Activity.CountDownActivity" />
+        <activity android:name=".UI.Activity.mapActivity" />
+        <activity android:name=".UI.Activity.DietActivity" />
+        <activity android:name=".UI.Activity.CustomActivity"></activity>
+        <activity android:name=".UI.Activity.MainActivity"></activity>
+        <activity android:name=".UI.Activity.RegisterActivity"></activity>
+        <activity
+            android:name=".UI.Activity.LoginActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--Use this key when packing-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="a965df609297f8e33543bee55384d728" />
+
+        <service android:name="com.amap.api.location.APSService"></service>
+
+        <!-- Use your own key -->
+
+        <!-- Use this key when debugging -->
+        <!--<meta-data-->
+        <!--android:name="com.amap.api.v2.apikey"-->
+        <!--android:value="**********************" />-->
+
+    </application>
+
+</manifest>

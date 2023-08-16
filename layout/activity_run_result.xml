@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.Activity.RunResultActivity"
+    android:background="@drawable/img_0"
+    android:gravity="center_horizontal">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:elevation="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start: "
+                android:textColor="@color/lightWhiteFg"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_resultStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-05-29 12:59:10"
+                android:textSize="24sp"
+                android:textColor="@color/lightWhiteFg"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End: "
+                android:textColor="@color/lightWhiteFg"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/tv_resultEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-05-29 13:20:32"
+                android:textSize="24sp"
+                android:textColor="@color/lightWhiteFg"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/purpleBkg"
+        android:layout_marginTop="50dp"
+        android:elevation="10dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Distance："
+                android:textColor="@color/lightWhiteFg"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tv_resultDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="238"
+                android:textSize="25sp"
+                android:textColor="@color/lightWhiteFg"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/resultUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m"
+                android:textColor="@color/lightWhiteFg"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Time："
+                android:textColor="@color/lightWhiteFg"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tv_resultDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textSize="25sp"
+                android:textColor="@color/lightWhiteFg"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:text="Pace："
+                android:textColor="@color/lightWhiteFg"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tv_resultSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.8"
+                android:textSize="25sp"
+                android:textColor="@color/lightWhiteFg"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m/s"
+                android:textColor="@color/lightWhiteFg"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_resultFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/lightDark"
+        android:text="Next"
+        android:textColor="@color/lightWhiteFg"
+        android:textSize="15sp" />
+</LinearLayout>
